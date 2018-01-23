@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  width: 50%;
+}
+
+.image {
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  display: block;
+  width: 200px;
+  height: 200px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 205px;
+  width: 299px;
+  opacity: 0;
+  transition: 1s ease;
+  background-color: rgba(245, 235, 102, 0.842);
+}
+
+.container:hover .overlay {
+  opacity: .5;
+}
+
+.text {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover img {
+  transform: scale(1.1);
+}
+</style>
+</head>
+<body>
+
+
+<div class="container">
+  <img src="waves.jpg" alt="waves" class="Waves">
+  <div class="overlay">
+    <div class="text">Sunset</div>
+  </div>
+</div>
+
+</body>
+</html>
